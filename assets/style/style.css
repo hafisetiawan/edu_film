@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+header {
+    height: 75px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 0px 29px 0px rgba(129,133,177,1);
+    background-color: rgba(0,0,0,0.8);
+    position: sticky;
+    top: 0;
+    z-index: 45;
+}
+.menu-icon{
+    color:yellow;
+    float: right;
+    padding:21px 40px;
+    font-size:50px;
+}
+
+header a {
+    color:yellow;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+header a:hover{
+    color:white;
+}
+
+header a:active{
+    color:red;
+}
+
+header h1{
+    color:red;
+    font-weight:bold;
+    font-size:40px;
+    margin-top:8px;
+    border-radius:25px;
+}
+header fa {
+    display: none;
+}
+
+.penggumuman img{
+    width:100%;
+    border-radius:25px;
+    margin-bottom:70px;
+}
+
+.header-left {
+    float:  left;
+    line-height: 65px;
+    margin-left: 20px;
+}
+
+.header-right {
+    float: right;
+    line-height: 65px;
+    color:green;
+}
+
+.header-right li {
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+/*Bagian Utama*/
+main {
+   width: 100%;
+    padding-bottom: 100px;
+    padding-top:40px;
+    background-color: lightblue;
+}
+
+.top-wrapper {
+    padding-top:30px;
+    text-align: center;
+    border-radius:10px;
+    padding-top:20px;
+    width:100%;
+}
+
+.top-wrapper h1{ /*Informasi*/
+    letter-spacing:20px;
+    border:4px solid black;
+    font-size: 70px;
+    text-align: center;
+    border-radius:10px;
+}
+
+.top-wrapper h2{
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+
+span{
+    color:red;
+}
+
+.top-wrapper img {
+    width: 379px;
+    float:left;
+    margin-right:20px;
+}
+
+.top-wrapper p{
+    font-size:22px;
+    text-align: left;
+    width: 99%;
+    margin:10px;
+    box-sizing: border-box;
+}
+
+/*Daftar Film*/
+.list-title h1{
+    letter-spacing:20px;
+    border:4px solid black;
+    font-size: 70px;
+    text-align: center;
+    border-radius:10px;
+    margin-top:200px;
+}
+
+.film-wrapper{
+    position: relative;
+}
+
+.films{
+    width:100%;
+    text-align:center;
+    border-radius: 22px 22px 22px 22px;
+    box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+
+}
+.films h3{
+    font-size:40px;
+    margin-top:50px;
+    margin-bottom: 10px;
+    border-bottom:1px solid black;
+    border-top:1px solid black;
+    background-color: yellow;
+}
+
+.films img{
+    height:90%;
+}
+
+.films p{
+    text-align: center
+    line-height:20px;
+    margin-top:10px;
+    font-size:25px;
+    padding:20px 150px 20px 150px;
+}
+
+.btn{
+  padding:12px 24px;
+  color:white;
+  display:inline-block;
+  opacity:0.8;
+  text-align: center;
+  cursor:pointer;
+  margin-top:20px;
+  margin-bottom:30px;
+}
+
+.tonton{
+    background-color:#006400;
+    box-shadow:0 7px black;
+    border-radius: 8px;
+}
+
+.download{
+    background-color:#FF00FF;
+    margin-left:20px;
+    box-shadow:0 7px black;
+    border-radius: 8px;
+}
+
+.btn:active{
+    box-shadow:none;
+    position:relative;
+    top:7px;
+    color:black;
+}
+
+
+
+/*Tentang Kami*/
+#container-tambahan{
+    margin-top:200px;
+    text-align:center;
+}
+
+.heading h2{
+    letter-spacing:20px;
+    border:4px solid black;
+    font-size: 70px;
+    text-align: center;
+    border-radius:10px;
+    margin-bottom: 70px;
+}
+
+.container{
+    text-align: center;
+}
+
+.biodatas{
+    display: flex;
+    justify-content: space-around;
+    height:500px;
+    left:20px;
+    right:20px;
+    border-radius: 22px 22px 22px 22px;
+    box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+
+}
+
+.biodata{
+    width:40%;
+    margin-right:20px;
+    margin-bottom:20px;
+    padding-top:50px;
+    position: relative;
+}
+
+.biodata img{
+    height:49.7%;
+    margin-left:5px;
+}
+.biodata h1{
+    font-size: 20px;
+    color:red;
+    background-color:white;
+    height:30px;
+    padding-top:4px;
+    margin-bottom:20px;
+    box-shadow:0 7px black;
+    border-radius: 8px;
+}
+
+.biodata p{
+    font-style:bold;
+    font-size: 18px
+    padding-right:20px;
+    padding-left: 20px; 
+}
+
+
+/* footer jadiin class paling bawah ya */
+
+footer {
+    height: 75px;
+    padding: 20px;
+    color: #1d1d1d;
+    background-color: #c5c5c5;
+    text-align: center;
+    position: static;
+    font-size:20px;
+}
+.bottom{
+    font-size:10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*Responsive*/
+@media (max-width: 1000px){
+    .menu-icon{
+        padding-top:25px;
+        width: 50px;
+        height:50px;
+    }
+    .menu-icon:active{
+        color:red;
+    }
+
+    .top-wrapper h1{
+        letter-spacing:10px;
+        border:4px solid black;
+        font-size: 40px;
+        text-align: center;
+        border-radius:10px;
+    }
+
+    .top-wrapper p{
+        font-size:22px;
+        text-align: left;
+    }
+
+    .top-wrapper img {
+        text-align:center;
+        margin-right: 30px;
+        margin-bottom:5px;
+    }
+
+    /*titel sub name*/
+    .top-wrapper h1{
+        letter-spacing:10px;
+        border:4px solid black;
+        font-size: 40px;
+        text-align: center;
+        border-radius:10px;
+    }
+
+    .list-title h1{
+        letter-spacing:10px;
+        border:4px solid black;
+        font-size: 40px;
+        text-align: center;
+        border-radius:10px;
+
+    }
+
+    .heading h2{
+        letter-spacing:10px;
+        border:4px solid black;
+        font-size: 40px;
+        text-align: center;
+        border-radius:10px;
+    }
+
+    .films p{
+        font-size:20px;
+    }
+    .biodatas{
+        flex-direction: column;
+        height:1000px;
+        border-radius: 22px 22px 22px 22px;
+        box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+    }
+
+    .biodata{
+        flex-direction: column;
+        width:100%;
+        margin-bottom:10px;
+        padding-top:20px;
+        text-align: center;
+    }
+
+    .biodata img{
+        justify-content: space-around;
+        height:150%;
+        margin-left:2px;
+    }
+
+    .biodata h1{
+        font-size: 15px;
+        color:red;
+        background-color:white;
+        height:30px;
+        padding-top:6px;
+        margin-bottom:20px;
+        box-shadow:0 7px black;
+        border-radius: 8px;
+        flex-direction: column;
+    }
+
+    .biodata p{
+        font-style:bold;
+        font-size: 10px;
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+
+
+
+@media (max-width: 690px){
+    header a{
+    display:none;
+    }
+
+    .biodatas{
+        flex-direction: column;
+        height:1000px;
+        border-radius: 22px 22px 22px 22px;
+        box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+    }
+
+    .biodata{
+        flex-direction: column;
+        width:100%;
+        margin-bottom:10px;
+        padding-top:20px;
+        text-align: center;
+    }
+
+    .biodata img{
+        justify-content: space-around;
+        height:150%;
+        margin-left:2px;
+    }
+
+    .biodata h1{
+        font-size: 15px;
+        color:red;
+        background-color:white;
+        height:30px;
+        padding-top:6px;
+        margin-bottom:20px;
+        box-shadow:0 7px black;
+        border-radius: 8px;
+        flex-direction: column;
+    }
+
+    .biodata p{
+        font-style:bold;
+        font-size: 10px;
+        flex-direction: column;
+    }
+
+}
