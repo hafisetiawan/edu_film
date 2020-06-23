@@ -1,0 +1,266 @@
+
+
+/*Responsive*/
+@media (max-width: 1000px){
+    .menu-icon{
+        padding-top:25px;
+        width: 50px;
+        height:50px;
+    }
+    .menu-icon:active{
+        color:red;
+    }
+
+    .main_container {
+    width: 100%;
+    margin: auto;
+    }
+        
+
+    .top-wrapper h1{
+        letter-spacing:10px;
+        border:4px solid black;
+        font-size: 40px;
+        text-align: center;
+        border-radius:10px;
+    }
+
+    .top-wrapper p{
+        font-size:22px;
+        text-align: justify;
+    }
+
+    .top-wrapper img {
+        text-align:center;
+        margin-right: 30px;
+        margin-bottom:5px;
+        background-size: cover
+    }
+
+    /*titel sub name*/
+    .top-wrapper h1{
+        letter-spacing:10px;
+        border:4px solid black;
+        font-size: 40px;
+        text-align: center;
+        border-radius:10px;
+    }
+
+    .list-title h1{
+        letter-spacing:10px;
+        border:4px solid black;
+        font-size: 40px;
+        text-align: center;
+        border-radius:10px;
+
+    }
+
+    .heading h2{
+        letter-spacing:10px;
+        border:4px solid black;
+        font-size: 40px;
+        text-align: center;
+        border-radius:10px;
+        margin-bottom: 20px;
+    }
+
+    .films{
+        height:800px;
+    }
+
+    .films p{
+        font-size:20px;
+    }
+
+
+    #container-tambahan{
+        position: static;
+        text-align: center;
+        border-radius: 22px 22px 22px 22px;
+        box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+        height:210%;
+
+    }
+    .biodatas{
+        position: static;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow:none;
+        width: 80%;
+
+    }
+
+    .biodata{
+        width:40%;
+        height:70%;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .biodata img{
+        width:50%
+        height:70%;
+        position: static;
+        margin-left:2px;
+        margin top:80px;
+        background-position: all; 
+    }
+
+    .biodata h1{
+        font-size: 20px;
+        color:red;
+        background-color:white;
+        height:30px;
+        padding-top:6px;
+        margin-bottom:20px;
+        box-shadow:0 7px black;
+        border-radius: 8px;
+    }
+
+    .biodata p{
+        font-style:bold;
+        font-size: 15px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+
+}
+
+
+
+
+
+
+@media (max-width: 670px){
+    header a{
+    display:none;
+    }
+
+    .main_container {
+    width: 100%;
+    margin: auto;
+    }
+
+    .top-wrapper p{
+        font-size:18px;
+        text-align: justify;
+    }
+
+
+    .top-wrapper img {
+        margin-right:20px;
+        background-size: cover
+    }
+    .menu-icon{
+        margin-top:5px;
+        margin-bottom:10px;
+    }
+
+    .list-title h1{
+        letter-spacing:20px;
+        border:4px solid black;
+        font-size: 20px;
+        text-align: center;
+        border-radius:10px;
+        margin-top:200px;
+    }
+
+    .film-wrapper{
+        position: relative;
+    }
+
+    .films{
+        width:100%;
+        text-align:center;
+        border-radius: 22px 22px 22px 22px;
+        box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+        /*margin:0px;*/
+
+
+    }
+
+    .films h3{
+        font-size:20px;
+        margin-top:50px;
+        margin-bottom: 10px;
+        border-bottom:1px solid black;
+        border-top:1px solid black;
+        background-color: yellow;
+    }
+
+    .films img{
+        height:50%;
+    }
+
+    .films p{
+        text-align: center
+        line-height:20px;
+        margin-top:10px;
+        font-size:16px;
+        padding:10px 15px 10px 15px;
+    }
+
+    .btn {
+        margin-top:-20px;
+    }
+
+    #container-tambahan{
+        position: static;
+        text-align: center;
+        border-radius: 22px 22px 22px 22px;
+        box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+        height:350%;
+    }
+
+
+    .biodata{
+        width:100%;
+        padding-top:20px;
+        text-align: center;
+    }
+
+    .biodata img{
+        width:80%;
+
+        margin-left:2px;
+        box-sizing: border-box;
+    }
+
+    .biodata h1{
+        font-size: 16px;
+        color:red;
+        background-color:white;
+        height:30px;
+        width:100%;
+        padding-top:6px;
+        margin-bottom:10px;
+        box-shadow:0 7px black;
+        border-radius: 8px;
+        flex-direction: column;
+    }
+
+    .biodata p{
+        font-style:bold;
+        font-size: 14px;
+        flex-direction: column;
+    }
+
+
+    footer {
+        width: 100%;
+        height: 75px;
+        padding: 20px;
+        color: #1d1d1d;
+        background-color: #c5c5c5;
+        text-align: center;
+        font-size:15px;
+    }
+    .bottom{
+        font-size:10px;
+    }
+
+}

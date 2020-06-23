@@ -7,6 +7,11 @@
     font-family: "Fira Sans Condensed", sans-serif;
 }
 
+.main_container {
+    width: 80%;
+    margin: auto;
+
+}
 header {
     height: 75px;
     border-bottom-left-radius: 25px;
@@ -17,11 +22,13 @@ header {
     top: 0;
     z-index: 45;
 }
+
 .menu-icon{
     color:yellow;
     float: right;
-    padding:21px 40px;
+    margin:-40px 40px 21px 40px;
     font-size:50px;
+
 }
 
 header a {
@@ -76,9 +83,10 @@ header fa {
 
 /*Bagian Utama*/
 main {
-   width: 100%;
+    width: 100%;
     padding-bottom: 100px;
-    padding-top:40px;
+    padding-top:120px;
+    margin-top: -80px;
     background-color: lightblue;
 }
 
@@ -88,12 +96,13 @@ main {
     border-radius:10px;
     padding-top:20px;
     width:100%;
+    margin: auto;
 }
 
 .top-wrapper h1{ /*Informasi*/
     letter-spacing:20px;
     border:4px solid black;
-    font-size: 70px;
+    font-size: 40px;
     text-align: center;
     border-radius:10px;
 }
@@ -109,42 +118,66 @@ span{
 }
 
 .top-wrapper img {
-    width: 379px;
-    float:left;
+    width: 40%;
     margin-right:20px;
+    float: left;
 }
 
 .top-wrapper p{
     font-size:22px;
-    text-align: left;
-    width: 99%;
-    margin:10px;
+    text-align: justify;
+    margin-right:30px;
     box-sizing: border-box;
+    line-height: 30px;
+
+}
+
+.container-informasi {
+    width: 75%;
+    margin: auto;
 }
 
 /*Daftar Film*/
 .list-title h1{
     letter-spacing:20px;
     border:4px solid black;
-    font-size: 70px;
+    font-size: 40px;
     text-align: center;
     border-radius:10px;
     margin-top:200px;
 }
 
 .film-wrapper{
-    position: relative;
+    position: top;
+    display: inline-block;
+    width:100%;
 }
 
 .films{
-    width:100%;
+    position: relative;
+    display: inline-block;
+    width:45%;
+    height: 900px;
     text-align:center;
-    border-radius: 22px 22px 22px 22px;
+    border-radius: 5%;
+    padding: 5px;
     box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
-
+    margin: 4% 2% 0%;
 }
+
+.contentfilm {
+    height: 300px;
+    width: 95%;
+    padding-top: 10px;
+    border: 5%;
+    text-align: justify;
+    overflow: auto;
+    margin: auto;
+}
+
+
 .films h3{
-    font-size:40px;
+    font-size:30px;
     margin-top:50px;
     margin-bottom: 10px;
     border-bottom:1px solid black;
@@ -153,15 +186,15 @@ span{
 }
 
 .films img{
-    height:90%;
+    width:50%;
 }
 
 .films p{
     text-align: center
     line-height:20px;
     margin-top:10px;
-    font-size:25px;
-    padding:20px 150px 20px 150px;
+    font-size:20px;
+    padding:20px 10% 20px;
 }
 
 .btn{
@@ -218,29 +251,31 @@ span{
 
 .biodatas{
     display: flex;
-    justify-content: space-around;
     height:500px;
     left:20px;
     right:20px;
     border-radius: 22px 22px 22px 22px;
     box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+    width:99%;
+    margin: auto;
 
 }
 
 .biodata{
-    width:40%;
-    margin-right:20px;
-    margin-bottom:20px;
+    width:18%;
+    margin: left;
+    margin: 1%;
     padding-top:50px;
     position: relative;
 }
 
 .biodata img{
-    height:49.7%;
+    /*height:49.7%;*/
+    width: 90%;
     margin-left:5px;
 }
 .biodata h1{
-    font-size: 20px;
+    font-size: 18px;
     color:red;
     background-color:white;
     height:30px;
@@ -268,6 +303,8 @@ footer {
     text-align: center;
     position: static;
     font-size:20px;
+    width: 80%;
+    margin: auto;
 }
 .bottom{
     font-size:10px;
@@ -283,7 +320,7 @@ footer {
 
 
 /*Responsive*/
-@media (max-width: 1000px){
+@media (max-width: 1165px){
     .menu-icon{
         padding-top:25px;
         width: 50px;
@@ -292,6 +329,12 @@ footer {
     .menu-icon:active{
         color:red;
     }
+
+    .main_container {
+    width: 100%;
+    margin: auto;
+    }
+        
 
     .top-wrapper h1{
         letter-spacing:10px;
@@ -303,13 +346,14 @@ footer {
 
     .top-wrapper p{
         font-size:22px;
-        text-align: left;
+        text-align: justify;
     }
 
     .top-wrapper img {
         text-align:center;
         margin-right: 30px;
         margin-bottom:5px;
+        background-size: cover
     }
 
     /*titel sub name*/
@@ -336,34 +380,57 @@ footer {
         font-size: 40px;
         text-align: center;
         border-radius:10px;
+        margin-bottom: 20px;
+    }
+
+    .films{
+        height:800px;
     }
 
     .films p{
         font-size:20px;
     }
-    .biodatas{
-        flex-direction: column;
-        height:1000px;
+
+    .film img{
+        width: 100%
+    }
+
+    #container-tambahan{
+        position: static;
+        text-align: center;
         border-radius: 22px 22px 22px 22px;
         box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+        height:280%;
+
+    }
+    .biodatas{
+        position: static;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow:none;
+        width: 80%;
+
     }
 
     .biodata{
-        flex-direction: column;
-        width:100%;
-        margin-bottom:10px;
-        padding-top:20px;
+        width:40%;
+        height:70%;
         text-align: center;
+        margin-bottom: 100px;
     }
 
     .biodata img{
-        justify-content: space-around;
-        height:150%;
+        width:50%
+        height:70%;
+        position: static;
         margin-left:2px;
+        margin top:80px;
+        background-position: all; 
     }
 
     .biodata h1{
-        font-size: 15px;
+        font-size: 20px;
         color:red;
         background-color:white;
         height:30px;
@@ -371,13 +438,15 @@ footer {
         margin-bottom:20px;
         box-shadow:0 7px black;
         border-radius: 8px;
-        flex-direction: column;
     }
 
     .biodata p{
         font-style:bold;
-        font-size: 10px;
-        flex-direction: column;
+        font-size: 15px;
+    }
+
+    footer {
+        width: 100%;
     }
 
 
@@ -388,39 +457,117 @@ footer {
 
 
 
-@media (max-width: 690px){
+@media (max-width: 670px){
+    .menu-icon{
+        margin : 5px auto 5px auto;
+    }
+
     header a{
     display:none;
     }
 
-    .biodatas{
-        flex-direction: column;
-        height:1000px;
-        border-radius: 22px 22px 22px 22px;
-        box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+    .menu-icon{
+    display: inline-block;
     }
 
-    .biodata{
-        flex-direction: column;
-        width:100%;
+    .main_container {
+    width: 100%;
+    margin: auto;
+    }
+
+    .top-wrapper p{
+        font-size:18px;
+        text-align: justify;
+    }
+
+
+    .top-wrapper img {
+        margin-right:20px;
+        background-size: cover
+    }
+    .menu-icon{
+        margin-top:5px;
         margin-bottom:10px;
+    }
+
+    .list-title h1{
+        letter-spacing:20px;
+        border:4px solid black;
+        font-size: 20px;
+        text-align: center;
+        border-radius:10px;
+        margin-top:200px;
+    }
+
+    .film-wrapper{
+        position: relative;
+    }
+
+    .films{
+        width:100%;
+        text-align:center;
+        border-radius: 22px 22px 22px 22px;
+        box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+        /*margin:0px;*/
+
+
+    }
+
+    .films h3{
+        font-size:20px;
+        margin-top:50px;
+        margin-bottom: 10px;
+        border-bottom:1px solid black;
+        border-top:1px solid black;
+        background-color: yellow;
+    }
+
+    .films img{
+        height:40%;
+        width:auto;
+    }
+
+    .films p{
+        text-align: center
+        line-height:20px;
+        margin-top:10px;
+        font-size:16px;
+        padding:10px 15px 10px 15px;
+    }
+
+    .btn {
+        margin-top:20px;
+    }
+
+    #container-tambahan{
+        position: static;
+        text-align: center;
+        border-radius: 22px 22px 22px 22px;
+        box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+        height:350%;
+    }
+
+
+    .biodata{
+        width:100%;
         padding-top:20px;
         text-align: center;
     }
 
     .biodata img{
-        justify-content: space-around;
-        height:150%;
+        width:40%;
         margin-left:2px;
+        box-sizing: border-box;
     }
 
     .biodata h1{
-        font-size: 15px;
+        font-size: 16px;
         color:red;
         background-color:white;
         height:30px;
+        width:100%;
         padding-top:6px;
-        margin-bottom:20px;
+        margin-bottom:10px;
         box-shadow:0 7px black;
         border-radius: 8px;
         flex-direction: column;
@@ -428,8 +575,22 @@ footer {
 
     .biodata p{
         font-style:bold;
-        font-size: 10px;
+        font-size: 14px;
         flex-direction: column;
+    }
+
+
+    footer {
+        width: 100%;
+        height: 75px;
+        padding: 20px;
+        color: #1d1d1d;
+        background-color: #c5c5c5;
+        text-align: center;
+        font-size:15px;
+    }
+    .bottom{
+        font-size:10px;
     }
 
 }
